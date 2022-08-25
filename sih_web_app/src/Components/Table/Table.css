@@ -1,0 +1,15 @@
+th, td {
+    @apply text-left py-2.5 px-4;
+}
+
+thead tr {
+    @apply bg-gray-800 text-white;
+}
+
+tbody tr {
+    @apply bg-gray-100;
+}
+
+tbody tr:nth-child(2n) {
+    @apply bg-gray-50;
+}
