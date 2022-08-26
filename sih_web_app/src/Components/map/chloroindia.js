@@ -24,10 +24,6 @@ const COLOR_RANGE = [
 
 const DEFAULT_COLOR = "#EEE";
 
-const getRandomInt = () => {
-  return parseInt(Math.random() * 100);
-};
-
 const geographyStyle = {
   default: {
     outline: "none",
@@ -81,12 +77,12 @@ function Maps() {
   const [tooltipContent, setTooltipContent] = useState("");
   const [data, setData] = useState(getHeatMapData());
 
-  const gradientData = {
-    fromColor: COLOR_RANGE[0],
-    toColor: COLOR_RANGE[COLOR_RANGE.length - 1],
-    min: 0,
-    max: data.reduce((max, item) => (item.value > max ? item.value : max), 0),
-  };
+  // const gradientData = {
+  //   fromColor: COLOR_RANGE[0],
+  //   toColor: COLOR_RANGE[COLOR_RANGE.length - 1],
+  //   min: 0,
+  //   max: data.reduce((max, item) => (item.value > max ? item.value : max), 0),
+  // };
 
   const colorScale = scaleQuantile()
     .domain(data.map((d) => d.value))
@@ -106,9 +102,6 @@ function Maps() {
     setTooltipContent("");
   };
 
-  const onChangeButtonClick = () => {
-    setData(getHeatMapData());
-  };
 
   return (
     <div className="full-width-height container">

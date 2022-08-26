@@ -106,7 +106,7 @@ function InfoCard(data) {
       <div class="w-full bg-white rounded-xl overflow-hdden shadow-md p-4 undefined">
         <div class="flex flex-wrap border-b border-gray-200 undefined">
           <div class="bg-gradient-to-tr from-pink-500 to-pink-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-24 h-24 py-4 px-4 justify-center shadow-lg-pink mb-0">
-            <Icon name="local_hospital" size="3xl" color="white" />
+            <Icon name="inventory" size="3xl" color="white" />
           </div>
           <div class="w-full pl-4 max-w-full flex-grow flex-1 mb-2 text-right undefined">
             <h5 class="text-gray-500 font-light tracking-wide text-base mb-1">
@@ -127,7 +127,7 @@ function InfoCard(data) {
         <div class="flex flex-wrap border-b border-gray-200 undefined">
           <div class="bg-gradient-to-tr from-orange-500 to-orange-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-24 h-24 py-4 px-4 justify-center shadow-lg-orange mb-0">
             <span class="material-icons text-white text-3xl leading-none">
-              hospital
+              bed
             </span>
           </div>
           <div class="w-full pl-4 max-w-full flex-grow flex-1 mb-2 text-right undefined">
@@ -175,7 +175,7 @@ function InfoCard(data) {
         <div class="flex flex-wrap border-b border-gray-200 undefined">
           <div class="bg-gradient-to-tr from-blue-500 to-blue-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-24 h-24 py-4 px-4 justify-center shadow-lg-blue mb-0">
             <span class="material-icons text-white text-3xl leading-none">
-              diploma
+              school
             </span>
           </div>
           <div class="w-full pl-4 max-w-full flex-grow flex-1 mb-2 text-right undefined">
@@ -247,7 +247,7 @@ function InfoCard(data) {
       <div class="flex flex-wrap border-b border-gray-200 undefined">
         <div class="bg-gradient-to-tr from-purple-500 to-purple-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-24 h-24 py-4 px-4 justify-center shadow-lg-purple mb-0">
           <span class="material-icons text-white text-3xl leading-none">
-            bank
+            account_balance
           </span>
         </div>
         <div class="w-full pl-4 max-w-full flex-grow flex-1 mb-2 text-right undefined">
@@ -271,7 +271,7 @@ function InfoCard(data) {
       <div class="flex flex-wrap border-b border-gray-200 undefined">
         <div class="bg-gradient-to-tr from-blue-500 to-blue-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-24 h-24 py-4 px-4 justify-center shadow-lg-blue mb-0">
           <span class="material-icons text-white text-3xl leading-none">
-            school
+            water
           </span>
         </div>
         <div class="w-full pl-4 max-w-full flex-grow flex-1 mb-2 text-right undefined">
