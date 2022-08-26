@@ -1,10 +1,10 @@
 import React from "react";
 import Chart from "react-apexcharts";
 
-const apexChart = ({ Data }) => {
+const ApexChart = ({ Data,years}) => {
+  console.log(years)
   const options = {
     chart: {
-      height: "80%",
       type: "line",
       zoom: {
         enabled: true,
@@ -25,7 +25,7 @@ const apexChart = ({ Data }) => {
     },
     xaxis: {
       type: "Year",
-      categories: ["2016", "2017", "2018", "2019", "2020", "2021"],
+      categories: years,
     },
   };
 
@@ -33,7 +33,6 @@ const apexChart = ({ Data }) => {
     <div className="app">
       <div className="row">
         <div className="mixed-chart">
-          {console.log(Data)}
           <Chart
             options={options}
             series={[
@@ -43,7 +42,7 @@ const apexChart = ({ Data }) => {
               },
             ]}
             type="line"
-            width="90%"
+            width="95%"
           />
         </div>
       </div>
@@ -51,4 +50,4 @@ const apexChart = ({ Data }) => {
   );
 };
 
-export default apexChart;
+export default ApexChart;

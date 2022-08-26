@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Table from "../Table/Table";
-import Navbar from "../navbar";
+import Navbar from "../Navbar";
 import Footer from "../Footer";
 import React from "react";
 
@@ -10,7 +10,7 @@ const LeaderboardPage = () => {
   const [clusterwise, setClusterwise] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/leader").then((response: any) => {
+    axios.get("http://172.16.103.65:8080/leader").then((response: any) => {
       setStatewise(response.data.statewise);
       setClusterwise(response.data.clusterwise);
       console.log(response.data.clusterwise);
@@ -23,7 +23,7 @@ const LeaderboardPage = () => {
   const get_clust_url = (data) => {
     let url = "cluster/" + data.Clusteridx;
     console.log(data.Clusteridx);
-    return <a href={url}>Cluster #{data.Clusteridx}</a>;
+    return <a href={url}>{data.villages[0]}</a>;
   };
   return (
     <>

@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
-import Footer from "../components/Footer";
-import MapExample from "../components/Map";
+import Footer from "../Footer";
+// import MapPage from "./MapPage";
 const HomePage = () => {
   return (
     <>
@@ -94,7 +94,7 @@ const HomePage = () => {
         </div>
       </div>
       <div class="grid grid-cols-1 px h-[300px]">
-        <MapExample />
+        {/* <MapExample /> */}
       </div>
 
       <Footer />

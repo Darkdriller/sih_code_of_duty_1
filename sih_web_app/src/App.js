@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import "./App.css";
+import React from "react";
+// import Navbar from "./components/Navbar";
+// import Cluster from "./components/Pages/cluster";
+import Cluster from "./Components/Pages/clusterPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./Components/Pages/home";
+import LeaderboardPage from "./Components/Pages/LeaderboardPage.tsx";
+import MapPage from "./Components/Pages/MapPage.tsx";
+import StatePage from "./Components/Pages/StatePage.tsx";
+// import SmartAnalysisPage from "./components/Pages/SmartAnalysisPage.tsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" exact element={<HomePage />} />
+          <Route path="/map" element={<MapPage />} />
+          <Route path="/leaderboard" element={<LeaderboardPage />} />
+          {/*<Route path="/cluster/:id" element={<Cluster/>}/>*/}
+          <Route path="/state/:id" element={<StatePage />} />
+          {/* <Route path="/smart_analysis" element={<SmartAnalysisPage />} /> */}
+          <Route path="/cluster/:id" element={<Cluster />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

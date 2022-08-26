@@ -1,15 +1,22 @@
 import { useParams } from "react-router-dom";
-import Table from "../Table";
+import Table from "../Table/Table";
 import Navbar from "../Navbar";
-const React = require("react");
+import React, { useState } from "react";
+import Modal from "react-modal";
+import "./statePage.css"
+import Select from "react-select";
+Modal.setAppElement("#root");
 const useFetch = require("react-fetch-hook");
 const get_clust_url = (data) => {
   let url = "/cluster/" + data.Clusteridx;
-  return <a href={url}>Cluster #{data.Clusteridx}</a>;
+  return <a href={url}>{data.villages[0]}</a>;
 };
+
 const StatePage = () => {
+
+
   const id = useParams();
-  const { data, error } = useFetch("http://localhost    :8080/state", {
+  const { data, error } = useFetch("http://172.16.103.65:8080/state", {
     method: "post",
     headers: { Accept: "application/json" },
     body: id.id,
@@ -26,12 +33,11 @@ const StatePage = () => {
 
         <div className="grid grid-cols-4 gap-4 mt-4">
           <div className="flex justify-center flex-col items-center p-4 border border-gray-700">
-            <div>Number of Districts</div>
+            <button>Number of Districts</button>
             <div className="mt-2 text-3xl font-semibold">
               {data.no_districts}
             </div>
-          </div>
-
+            </div>
           <div className="flex justify-center flex-col items-center p-4 border border-gray-700">
             <div>Panchayath clustered</div>
             <div className="mt-2 text-3xl font-semibold">57</div>
