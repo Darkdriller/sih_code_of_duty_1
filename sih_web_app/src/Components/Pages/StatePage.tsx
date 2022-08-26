@@ -71,6 +71,11 @@ const StatePage = () => {
                 value: (data) => get_clust_url(data),
               },
               {
+                name: "District",
+                value: (data) => (data.district),
+              },
+
+              {
                 name: "Score",
                 value: (data) => data.score,
               },
