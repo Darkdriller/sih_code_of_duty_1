@@ -10,7 +10,7 @@ const LeaderboardPage = () => {
   const [clusterwise, setClusterwise] = useState([]);
 
   useEffect(() => {
-    axios.get("http://172.16.103.65:8080/leader").then((response: any) => {
+    axios.get("http://localhost:8080/leader").then((response: any) => {
       setStatewise(response.data.statewise);
       setClusterwise(response.data.clusterwise);
       console.log(response.data.clusterwise);

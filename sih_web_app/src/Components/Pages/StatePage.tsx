@@ -16,7 +16,7 @@ const StatePage = () => {
 
 
   const id = useParams();
-  const { data, error } = useFetch("http://172.16.103.65:8080/state", {
+  const { data, error } = useFetch("http://localhost:8080/state", {
     method: "post",
     headers: { Accept: "application/json" },
     body: id.id,
