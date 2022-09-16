@@ -3,10 +3,16 @@
 This is the Github repo for code of duty 1 created during the [SIH 2022](https://sih.gov.in/) grand finale.
 
 ## How To Run
-To run the Code you need to initialize the backend [here](python/server.py) and frontend [here](sih_web_app)
-### Initialize the backend
-You
-In the project directory, you can run:
+To run the Code you need to initialize the backend [here](python) and frontend [here](sih_web_app)
+## Initialize the backend
+To start the backend server go to the [python](python) Folder and run:
+### `python server.py`
+or 
+### `python3 server.py`
+based on your installed python version
+## Starting The Frontend
+
+In the [project directory](sih_web_app), you can run:
 
 ### `npm start`
 
@@ -14,14 +20,7 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### DATA
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
+You can find all the backend Data [here](https://drive.google.com/drive/folders/1MMnP1_DbZy7g9mT40j9P3xJk8t0sFMrL?usp=sharing)
 
