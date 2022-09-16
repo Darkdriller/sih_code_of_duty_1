@@ -3,10 +3,13 @@
 This is the Github repo for code of duty 1 created during the [SIH 2022](https://sih.gov.in/) grand finale.
 
 ## How To Run
-
+To run the Code you need to initialize the backend [here](python/server.py) and frontend [here](sih_web_app)
+### Initialize the backend
+You
 In the project directory, you can run:
 
 ### `npm start`
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
